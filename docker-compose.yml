@@ -6,8 +6,8 @@ services:
       context: .
       image: ${DOCKER_USER_ID}/flask
   production:
-    image: ${DOCKER_USER_ID}/flask:${BUILD_NUMBER}
-    ports:
+      image: ${DOCKER_USER_ID}/flask:${BUILD_NUMBER}
+      ports:
         - 3000:3000
-    volumes: 
+       volumes: 
         - .:/app
