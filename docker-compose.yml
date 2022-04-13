@@ -3,7 +3,7 @@ services:
   app:
     container_name: web
     build: .
-      image: ${DOCKER_USER_ID}/flask
+    image: ${DOCKER_USER_ID}/flask
 production:
     image: ${DOCKER_USER_ID}/flask:${BUILD_NUMBER}
     volumes: 
