@@ -5,7 +5,7 @@ services:
     build: 
       context: .
       image: ${DOCKER_USER_ID}/flask
-production:
+  production:
     image: ${DOCKER_USER_ID}/flask:${BUILD_NUMBER}
     ports:
         - 3000:3000
