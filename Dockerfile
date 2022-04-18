@@ -12,7 +12,9 @@ COPY package.json /app/package.json
 RUN npm install
 COPY . .
 
-EXPOSE 3000
+RUN npm run build
+
+EXPOSE 8080
 
 # start app
 CMD ["npm", "run", "serve"]
