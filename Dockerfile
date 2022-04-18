@@ -14,7 +14,7 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 8080
+EXPOSE 3000
 
 # start app
 CMD ["npm", "run", "serve"]
