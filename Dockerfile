@@ -16,4 +16,5 @@ RUN npm run build
 
 EXPOSE 80
 
+#start app
 CMD ["npm", "run", "serve"]
