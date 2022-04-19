@@ -9,6 +9,5 @@ services:
     image: ${DOCKER_USER_ID}/vue:${BUILD_NUMBER} 
     volumes: 
       - .:/app
-    command: npm run serve
     ports: 
-      - 8888:8888 
+      - 3000:3000
