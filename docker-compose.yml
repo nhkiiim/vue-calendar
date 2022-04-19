@@ -1,6 +1,6 @@
 version: "3" 
 services: 
-  web: 
+  app: 
     build: .
     image: ${DOCKER_USER_ID}/vue 
   production: 
