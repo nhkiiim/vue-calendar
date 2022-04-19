@@ -2,6 +2,6 @@ FROM node:12.2.0-alpine
 
 WORKDIR /app
 
-COPY ./app /app
+COPY ./app
 
 RUN npm install -g @vue/cli
