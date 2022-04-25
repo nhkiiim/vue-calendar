@@ -59,13 +59,21 @@
       ],
       value: '',
       events: [],
-      colors: ['#FF5C4D', '#FF9636', '#FFCD58', '#DAD870'],
+      colors: ['#FF5C4D', '#FF9636', '#FFCD58', '#DAD870','#B1D3C5'],
       uname: ''
     }),
     methods: {
       getEvents () {
         console.log(this.pjt)
         let events = [
+            { 
+              name: "최동균 PM님 반차",
+              pjt:'프레시웨이 클라우드 전환 2단계',
+              start: new Date('2022-04-07'),
+              end: new Date('2022-04-07'),
+              color: this.colors[4],
+              // timed: !allDay,
+            },
             { 
               name: "김나현님 재택",
               pjt:'프레시웨이 클라우드 전환 2단계',
@@ -103,32 +111,32 @@
               color: this.colors[1],
             },
             { 
-              name: "김수람님 재택",
-              pjt: 'FrameOne',
-              start: new Date('2022-04-05'),
+              name: "허예슬님 재택",
+              pjt: 'ODS 고도화 프로젝트',
+              start: new Date('2022-04-01'),
+              end: new Date('2022-04-01'),
+              color: this.colors[3],
+            },
+            { 
+              name: "허예슬님 재택",
+              pjt: 'ODS 고도화 프로젝트',
+              start: new Date('2022-04-07'),
+              end: new Date('2022-04-08'),
+              color: this.colors[3],
+            },
+            { 
+              name: "임창빈님 재택",
+              pjt: 'ODS 고도화 프로젝트',
+              start: new Date('2022-04-01'),
+              end: new Date('2022-04-01'),
+              color: this.colors[2],
+            },
+            { 
+              name: "임창빈님 재택",
+              pjt: 'ODS 고도화 프로젝트',
+              start: new Date('2022-04-08'),
               end: new Date('2022-04-08'),
               color: this.colors[2],
-            },
-            { 
-              name: "김수람님 재택",
-              pjt: 'FrameOne',
-              start: new Date('2022-04-15'),
-              end: new Date('2022-04-15'),
-              color: this.colors[2],
-            },
-            { 
-              name: "허예슬님 재택",
-              pjt: 'ODS 고도화 프로젝트',
-              start: new Date('2022-04-1'),
-              end: new Date('2022-04-1'),
-              color: this.colors[3],
-            },
-            { 
-              name: "허예슬님 재택",
-              pjt: 'ODS 고도화 프로젝트',
-              start: new Date('2022-04-7'),
-              end: new Date('2022-04-8'),
-              color: this.colors[3],
             },
             { 
               name: "허예슬님 재택",
@@ -138,11 +146,25 @@
               color: this.colors[3],
             },
             { 
+              name: "임창빈님 재택",
+              pjt: 'ODS 고도화 프로젝트',
+              start: new Date('2022-04-14'),
+              end: new Date('2022-04-15'),
+              color: this.colors[2],
+            },
+            { 
               name: "허예슬님 재택",
               pjt: 'ODS 고도화 프로젝트',
               start: new Date('2022-04-21'),
               end: new Date('2022-04-22'),
               color: this.colors[3],
+            },
+            { 
+              name: "임창빈님 재택",
+              pjt: 'ODS 고도화 프로젝트',
+              start: new Date('2022-04-21'),
+              end: new Date('2022-04-22'),
+              color: this.colors[2],
             },
             { 
               name: "허예슬님 재택",
