@@ -20,6 +20,9 @@
         @change="getEvents"
       ></v-text-field>
       </v-col>
+       <v-btn icon @click="otherPeople" class="mt-13">
+        <v-icon>mdi-account-arrow-down</v-icon>
+      </v-btn>
       <v-btn icon @click="$refs.calendar.prev()" class="mt-13">
         <v-icon>mdi-chevron-left</v-icon>
       </v-btn>
@@ -63,17 +66,19 @@
       uname: ''
     }),
     methods: {
-      getEvents () {
-        console.log(this.pjt)
-        let events = [
-            { 
+      otherPeople(){
+        this.events.push({ 
               name: "최동균 PM님 반차",
               pjt:'프레시웨이 클라우드 전환 2단계',
               start: new Date('2022-04-07'),
               end: new Date('2022-04-07'),
               color: this.colors[4],
               // timed: !allDay,
-            },
+            },)
+      },
+      getEvents () {
+        console.log(this.pjt)
+        let events = [
             { 
               name: "김나현님 재택",
               pjt:'프레시웨이 클라우드 전환 2단계',
