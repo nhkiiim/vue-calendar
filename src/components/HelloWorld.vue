@@ -20,7 +20,7 @@
         @change="getEvents"
       ></v-text-field>
       </v-col>
-       <v-btn icon @click="otherPeople" class="mt-13">
+      <v-btn icon @click="otherPeople" class="mt-13">
         <v-icon>mdi-account-arrow-down</v-icon>
       </v-btn>
       <v-btn icon @click="$refs.calendar.prev()" class="mt-13">
