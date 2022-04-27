@@ -68,7 +68,7 @@
     methods: {
       otherPeople(){
         this.events.push({ 
-              name: "최동균 PM님 반차",
+              name: "PM님 반차",
               pjt:'프레시웨이 클라우드 전환 2단계',
               start: new Date('2022-04-07'),
               end: new Date('2022-04-07'),
